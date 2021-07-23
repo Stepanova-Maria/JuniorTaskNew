@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="http://ваш_сайт/css/font-awesome.css"> -->
+    <link rel ="stylesheet" href="material-icons.css">
+    
+</head>
+<body>
+  <div class = element>
+    <div class = "create" id="create">     
+      <div class = "input-priority"> 
+        <label1>Приоритет: </label1> <br> 
+        <select name="priority" id = "priority">
+          <option value="under">Низкий</option>
+          <option value="middle" selected>Средний</option>
+          <option value="high">Высокий</option>
+        </select>      
+      </div>
+        
+      <div class = "input-text" id = "input-text"> 
+        <label2>Текст задачи:</label2> <br> 
+        <input type="text" name="text" id = "new-task" value="" placeholder="Введите текст" autofocus>   
+      </div>
+      
+      <button class="button" type="submit" id="add" onclick="addTask()"> Добавить задачу</button> 
+    </div>
+    
+    <form class = "form-control" id="form-control">
+      <div class = "filter-priority">
+        <label3 class = "label3"> Фильтр по приоритету: </label3>
+        <select name="filters" id = "filters" onchange="priorsFiltr()">
+          <option value="filter-any" selected>любой</option>
+          <option value="filter-under" id = "under">низкий</option>
+          <option value="filter-middle" id = "middle">средний</option>
+          <option value="filter-high" id = "high">высокий</option> 
+          </select>
+      </div>
+      
+      <div class = "filter-status" name="filterStatus" id = "status" >
+        <label4 class = "label4"> Фильтр по статусу: </label4> 
+          <input value="active"   type="checkbox" name="a" id = "active" onchange="checkboxStatus()">активные
+          <input value="close"  type="checkbox" name="b" id = "close" onchange="checkboxStatus()">отмененные
+          <input value="completed"  type="checkbox" name="c" id = "completed" onchange="checkboxStatus()">завершенные
+      </div>
+      
+      <div class = "sort-date">
+        <label5 class = "label5">Сортировка по дате: </label5> 
+        <select name="sort-date" id = "sort-date" onchange="sortDate()">
+          <option value="date-increase" selected>дата создания  &uarr;</option>
+          <option value="date-decrease" >дата создания  &darr;</option>
+        </select>
+      </div> 
+
+      <div class = "sort-priority">
+        <label6 class = "label6">Сортировка по приоритету: </label6> 
+        <select name="sort-priority" id = "sort-priority" onchange="sortPrior()">
+          <option value="priorit-increase" selected> приоритет  &uarr;</option>
+          <option value="priorit-decrease" > приоритет  &darr;</option>
+        </select>
+      </div>
+
+      <div class = "search-task">
+        <label7 class = "label7">Поиск задачи по тексту: </label7>
+        <input type="search" name="search" id = "search"  autofocus placeholder="Начните вводить текст задачи..." >  
+      </div>
+    </form>
+   
+    <div class = "lower" id = "taskslower" style="overflow-y: scroll">
+      <ul class = "unfinished-tasks" id = "unfinished-tasks" ></ul>
+    </div>
+    
+  </div>    
+  <script src = "index.js"> </script>
+    
+</body>
+</html>

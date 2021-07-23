@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #D3D3D3;
+
+
+}
+
+.element {
+    width: 710px;
+    height: 700px;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 20px;
+   
+}
+
+.create {
+    width: 640px;
+    height: 70px;
+    margin: 20px auto;
+    background-color: #D3D3D3;  
+    position: relative; 
+    top: 20px;
+    font-size: 11px;
+    color: #696969;
+}
+
+.input-priority {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+.input-text {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+}
+
+.button {
+    width: 150px;
+    font-size: 14px;
+    color: white;
+    background-color: #32CD32;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    box-shadow: 0 5px 15px 2 px #000;
+    position: absolute;
+    left: 400px;
+    top: 20px;
+    
+}
+
+
+.form-control {
+    width: 640px;
+    height: 130px;
+    font-size: 11px;
+    margin: 20px auto;
+    background-color: #D3D3D3;  
+    position: relative; 
+    top: 20px;
+}
+
+.filter-priority {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.filter-status {
+    position: absolute;
+    top: 10px;
+    left: 277px;
+}
+
+.sort-date {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+.sort-priority {
+    position: absolute;
+    top: 50px;
+    left: 277px;
+}
+
+.search-task {
+    position: absolute;
+    top: 90px;
+    left: 15px; 
+}
+
+.lower {
+    text-indent: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    white-space: normal;
+    width: 640px;
+    height: 410px;
+    margin: 20px auto;
+    background-color: #D3D3D3;  
+    position: relative; 
+    top: 20px; 
+   
+}
+
+.unfinished-tasks{
+    list-style-type: none;
+}
+
+.colorStatus{
+    cursor: pointer;
+    position: relative;
+    width: 330px;
+    top: 20px;
+    left: 120px;
+    margin-bottom: 30px;
+}
+
+.text {
+    cursor: pointer;
+    width: 270px;
+}
+
+.date{
+    cursor: pointer;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.delete { 
+    width: 20px;
+    cursor: pointer; 
+    position: absolute;
+    left: 420px;
+    top: 5px;
+}
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    left: 380px;
+    top: 5px;
+    
+}
+
+.checkbox {
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 340px;
+    top: 5px;
+}
+
+.checkboxOn{
+    display: none;
+}
+
+.closeOn{
+    display: none; 
+}
+
+.edit {
+    display: block;
+    position: absolute; 
+    width: 20px;
+    top: 5px;
+    left: 260px;
+    cursor: pointer;  
+}
+
+.under-priority {
+    background-color: rgb(206, 126, 140);
+    color: rgb(70, 1, 1);
+    width: 100px;
+    position: absolute; 
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.middle-priority {
+    background-color: rgb(158, 158, 214);
+    color: rgb(6, 6, 80);
+    width: 100px;
+    position: absolute; 
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.high-priority {
+    background-color: rgb(141, 182, 141);
+    color: rgb(3, 53, 3);
+    width: 100px;
+    position: absolute; 
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.statusTask {
+    display: none;
+}
+
+.active-task{
+    background: white;
+}
+
+.completed-task {
+    background-color: #94db94;
+}
+
+.close-task {
+    background-color: #e2a0a0;
+}
+
